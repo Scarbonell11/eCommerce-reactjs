@@ -1,0 +1,12 @@
+.carro{
+    width: 25px;
+    padding: 2px;
+}
+
+.botonCarrito{
+    width: 40px;
+    height: 40px;
+    background-color:white ;
+    border-color:#66A5AD ;
+    border-radius: 10px;
+}

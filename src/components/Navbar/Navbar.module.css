@@ -1,0 +1,56 @@
+
+.navb {
+    width: 100%;
+    height: 80px;
+    background-color: #66A5AD;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 0 0 10px 10px;
+}
+
+.titulo {
+    font-size: 20px;
+    text-align: center;
+    width: 100px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.categorias{
+    display: flex;
+    align-items: center;
+}
+
+.categorias button{
+    width: 25%;
+    cursor: pointer;
+    border: none;
+    background-color:   #66A5AD;
+    color: white;
+    margin: 0px 10px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.categorias button:hover {
+    background-color: #5c9299;
+}
+
+.categorias button:focus {
+    background-color: #5c9299;
+}
+
+
