@@ -1,8 +1,20 @@
+@import url('https://fonts.cdnfonts.com/css/meldina');
+
 .contenedor {
     display: flex;
+    flex-direction: column;
     justify-content: center; 
 }
 
 .titulo {
-    color: white;
+   display: flex;
+   justify-content: center;
+   text-shadow:
+   2px 2px 2px #003b46,
+   -2px 2px 2px #003b46,
+   -2px -2px 0 #003b46,
+   2px -2px 0 #003b46;
+   color: white;
+    font-size: 25px;
+    font-family: 'Meldina', sans-serif;
 }
