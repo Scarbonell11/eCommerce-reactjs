@@ -23,14 +23,14 @@ const productos = [
       img: "/src/components/Item/assets/camperatrucker.webp",
       description: "asdasdasd asdasd asdasd asdasdasd asdasd asdasdasd asdasd asdasd adsasd asdasd",
     },
-    {
+    /* {
       id: '4',
       name: "Zapato casual en cuero con cordon",
       price: 1400,
       category: "calzado",
       img: "/src/components/Item/assets/zapatocuero.webp",
       description: "asdasdasd asdasd asdasd asdasdasd asdasd asdasdasd asdasd asdasd adsasd asdasd",
-    },
+    }, */
   ];
 
 
