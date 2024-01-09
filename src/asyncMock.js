@@ -5,6 +5,7 @@ const productos = [
       price: 1000,
       category: "remeras",
       img: '/src/components/Item/assets/camiseta.webp',
+      stock: 10,
       description: "asdasdasd asdasd asdasdasd asdasd asdasd adsasd asdasd asdasdasd asdasd asdasdasd asdasd asdasd adsasd asdasd",
     },
     {
@@ -13,6 +14,7 @@ const productos = [
       price: 1020,
       category: "pantalones",
       img: "/src/components/Item/assets/pantaloncargo.webp",
+      stock: 10,
       description: "asdasdasd asdasd asdasd asdasdasd asdasd asdasdasd asdasd asdasd adsasd asdasd",
     },
     {
@@ -21,16 +23,17 @@ const productos = [
       price: 1030,
       category: "camperas",
       img: "/src/components/Item/assets/camperatrucker.webp",
+      stock: 10,
       description: "asdasdasd asdasd asdasd asdasdasd asdasd asdasdasd asdasd asdasd adsasd asdasd",
     },
-    /* {
+    {
       id: '4',
       name: "Zapato casual en cuero con cordon",
       price: 1400,
       category: "calzado",
       img: "/src/components/Item/assets/zapatocuero.webp",
       description: "asdasdasd asdasd asdasd asdasdasd asdasd asdasdasd asdasd asdasd adsasd asdasd",
-    }, */
+    },
   ];
 
 

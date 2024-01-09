@@ -18,7 +18,7 @@ const Navbar = () =>{
                 <Link to='/category/remeras' >Remeras</Link>
                 <Link to='/category/pantalones'>Pantalones</Link>
                 <Link to='/category/camperas'>Camperas</Link>
-                <Link to='/asdasd'>Calzado</Link>
+                <Link to='/category/calzado'>Calzado</Link>
             </section>
 
             <CartWidget />

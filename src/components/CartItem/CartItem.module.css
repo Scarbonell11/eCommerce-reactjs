@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50%;
+  background-color: #66a5ad;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.name {
+  width: 20%;
+}
+
+.botonEliminar {
+  background-color: #66a5ad;
+  border-color: #66a5ad;
+  border-radius: 10px;
+}
+
+.botonEliminar picture {
+  padding: 10px;
+}
+

@@ -1,13 +1,25 @@
-import style from './Loader.module.css'
+
+import './Loader.css'
+
 
 const Loader = () => {
-    return ( 
-        <>
-            <div className={style.loader} ></div>
-            <span className={style.textLoader}  >Cargando productos...</span>
-        </>
-    )
-}
 
+  return (
+    
+      <div className="spinnerContainer">
+        <div className="spinner"></div>
+        <div className="loader">
+          <p>Cargando...</p>
+          <div className="words">
+            <span className="word">Productos</span>
+            <span className="word">Servicios</span>
+            <span className="word">Entregas</span>
+            <span className="word">Clientes</span>
+            <span className="word">Carga completa</span>
+          </div>
+        </div>
+      </div>
+  );
+};
 
-export default Loader
+export default Loader;

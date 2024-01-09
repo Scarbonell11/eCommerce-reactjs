@@ -1,61 +1,59 @@
-@import url('https://fonts.cdnfonts.com/css/meldina');
-
 .navb {
-    width: 100%;
-    height: 80px;
-    background-color: #66A5AD;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 50px;
-    border-radius: 0 0 10px 10px;
+  width: 100%;
+  height: 80px;
+  background-color: #66a5ad;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .titulo {
-    font-family: 'Meldina', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    width: 100px;
+  font-family: "Meldina", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
 }
 
-.logo{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    color: white;
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: white;
 }
 
 .logo img {
-    margin: 10px;
-    width: 60px;
-    height: 60px;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
 }
 
-.categorias{
-    display: flex;
-    align-items: center;
+.categorias {
+  display: flex;
+  align-items: center;
 }
 
-.categorias a{
-    font-family: 'Meldina', sans-serif;
-    text-decoration: none;
-    width: 25%;
-    cursor: pointer;
-    border: none;
-    background-color:   #66A5AD;
-    color: white;
-    margin: 0px 10px;
-    padding: 15px;
-    font-size: 20px;
-    border-radius: 10px;
+.categorias a {
+  font-family: "Meldina", sans-serif;
+  text-decoration: none;
+  width: 25%;
+  cursor: pointer;
+  border: none;
+  background-color: #66a5ad;
+  color: white;
+  margin: 0px 10px;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
 .categorias a:hover {
-    background-color: #5c9299;
+  background-color: #5c9299;
 }
 
 .categorias a:focus {
-    background-color: #5c9299;
+  background-color: #5c9299;
 }
-
-
