@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { notify, notifyError } from "../../notification/Notification";
 import "./CheckoutForm.css";
 
 const CheckoutForm = ({ onConfirm }) => {
@@ -16,20 +17,21 @@ const CheckoutForm = ({ onConfirm }) => {
       email,
     };
 
-    onConfirm(userData);
+    if (name && phone && email) {
+      onConfirm(userData);
+      notify("Orden generada con exito");
+    } else {
+      notifyError("Completa el formulario para continuar");
+    }
   };
 
   return (
-    <section className="containerForm" >
+    <section className="containerForm">
       <form onSubmit={handleConfirm} className="form">
         <div className="title">
           Checkout,
           <br />
-          <span>
-            Completa tus datos para obtener
-            <br />
-            la factura
-          </span>
+          <span>Completa tus datos</span>
         </div>
         <input
           className="input"
@@ -64,5 +66,3 @@ const CheckoutForm = ({ onConfirm }) => {
 };
 
 export default CheckoutForm;
-
-

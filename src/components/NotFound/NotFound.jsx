@@ -9,8 +9,8 @@ const NotFound = () => {
         <h3>Parece que la pagina a la que intentas acceder no existe!</h3>
       </div>
 
-      <div className={clases.links} >
-        <Link to='/'>Volver al inicio</Link>
+      <div className={clases.links}>
+        <Link to="/">Volver al inicio</Link>
       </div>
     </section>
   );

@@ -27,6 +27,8 @@
     font-weight: 900;
     font-size: 20px;
     margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
   }
   
   .title span {

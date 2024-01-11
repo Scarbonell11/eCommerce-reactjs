@@ -1,6 +1,5 @@
-import  "./NoProducts.css";
+import "./NoProducts.css";
 import { Link } from "react-router-dom";
-
 
 const NoProducts = () => {
   return (
@@ -18,15 +17,14 @@ const NoProducts = () => {
           <div className="aviso-vacio">
             <div className="text-vacio">
               ¡Su carrito esta vacío!
-              <div className="slide-header">
-              </div>
+              <div className="slide-header"></div>
             </div>
           </div>
         </div>
         <div className="botones-bot4">
           <br />
-          <Link to='/' >Ir a comprar</Link>
-          <Link to='/' > Volver al inicio</Link>
+          <Link to="/">Ir a comprar</Link>
+          <Link to="/"> Volver al inicio</Link>
         </div>
       </div>
     </div>

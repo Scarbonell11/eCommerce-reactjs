@@ -1,28 +1,25 @@
 import clases from "./ItemDetail.module.css";
 import ItemCount from "../ItemCount/ItemCount";
-import {  useContext } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
-//Con el hook useContext  capturamos el valor del context 
+import { notify } from "../../notification/Notification";
+//Con el hook useContext  capturamos el valor del context
 //definido en App,para usarlo lo almacenamos en una constante
 const ItemDetail = ({ id, img, name, price, description, stock }) => {
-
-  
   //Como pueden existir multiples context en la app
   //hay que importar la referencia al context deseado aqui
-  const { addItem, isInCart } = useContext(CartContext)
-
+  const { addItem, isInCart } = useContext(CartContext);
 
   const handleOnAdd = (quantity) => {
-    
     const objProductToAdd = {
       id,
       name,
       price,
       quantity,
     };
-    addItem(objProductToAdd, quantity)
-    
+    addItem(objProductToAdd, quantity);
+    notify("Producto agregado con exito!");
   };
 
   return (
@@ -39,8 +36,7 @@ const ItemDetail = ({ id, img, name, price, description, stock }) => {
           </div>
 
           <div className={clases.boton}>
-            {
-            isInCart(id) ? (
+            {isInCart(id) ? (
               <Link to="/cart" className={clases.boton}>
                 {" "}
                 Terminar compra{" "}
@@ -52,8 +48,7 @@ const ItemDetail = ({ id, img, name, price, description, stock }) => {
                 stock={stock}
                 onAdd={handleOnAdd}
               />
-            )
-            }
+            )}
           </div>
         </section>
       </div>

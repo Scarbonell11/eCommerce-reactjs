@@ -14,6 +14,7 @@
     width: 500px;
     height: 300px;
     font-size: 8rem;
+    text-shadow: -5px -5px 5px #aaa
 }
 
 .titulo h3 {

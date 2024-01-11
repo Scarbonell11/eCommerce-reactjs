@@ -11,6 +11,7 @@
 //estas podran ser usadas como parametros por el hook useParams
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Notification from './notification/Notification.jsx'
 import Navbar from './components/Navbar/Navbar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
@@ -21,23 +22,25 @@ import Checkout from './components/Checkout/Checkout.jsx'
 
 
 
+
 function App() {
   
   return (
     <>
-      <BrowserRouter>
-        <CartProvider>
-          <Navbar/>
-          <Routes>
-            <Route path='/' element={<ItemListContainer greeting={'Bienvenido/a aqui encontraras ¡lo tuyo!'}/>} />
-            <Route path='/category/:categoryId' element={<ItemListContainer greeting={'Bienvenido/a aqui encontraras ¡lo tuyo!'}/>} />
-            <Route path='/detail/:productoId' element={<ItemDetailContainer />} />
-            <Route path='/cart' element={<CartView />} />
-            <Route path='/checkout' element={<Checkout />} />
-            <Route path='*' element={<NotFound />} />
-          </Routes>
-        </CartProvider>
-      </BrowserRouter>
+        <Notification />
+        <BrowserRouter>
+          <CartProvider>
+            <Navbar/>
+            <Routes>
+              <Route path='/' element={<ItemListContainer greeting={'Bienvenido/a aqui encontraras ¡lo tuyo!'}/>} />
+              <Route path='/category/:categoryId' element={<ItemListContainer greeting={'Bienvenido/a aqui encontraras ¡lo tuyo!'}/>} />
+              <Route path='/detail/:productoId' element={<ItemDetailContainer />} />
+              <Route path='/cart' element={<CartView />} />
+              <Route path='/checkout' element={<Checkout />} />
+              <Route path='*' element={<NotFound />} />
+            </Routes>
+          </CartProvider>
+        </BrowserRouter>
     </>
   )
 }
