@@ -1,8 +1,9 @@
 import "./Bill.css";
+import {notifyInfo} from '../../notification/Notification'
 
 
 const Bill = ({ orderId, dataClient }) => {
-  const { buyer, total, printBill } = dataClient;
+  const { buyer, total  } = dataClient;
 
   return (
     <div className="container">
@@ -40,7 +41,7 @@ const Bill = ({ orderId, dataClient }) => {
       <div className="card checkout">
         <div className="footer">
           <label className="price">${total} </label>
-          <button onClick={() => printBill()} className="checkout-btn">Imprimir factura</button>
+          <button onClick={() => notifyInfo("Funcionalidad en construccion")} className="checkout-btn">Imprimir factura</button>
         </div>
       </div>
     </div>

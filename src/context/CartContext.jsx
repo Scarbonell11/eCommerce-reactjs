@@ -44,9 +44,7 @@ export const CartProvider = ({ children }) => {
     return accu;
   };
 
-  const printBill = () => {
-    notifyInfo("Funcionalidad en construccion")
-  }
+  
 
   const getTotal = () => {
     let accu = 0;
@@ -62,7 +60,7 @@ export const CartProvider = ({ children }) => {
   };
 
   const total = getTotal();
-
+  
   const totalQuantity = getTotalQuantity();
 
   return (
@@ -75,7 +73,7 @@ export const CartProvider = ({ children }) => {
         cart,
         totalQuantity,
         clearCart,
-        printBill
+        
       }}
     >
       {children}

@@ -1,8 +1,39 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# eCommerce with React js
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+Install the dependencies and devDependencies and start the server.
+
+```sh
+$ git clone https://github.com/szuviria/zuvcommerce.git
+$ cd ecommercereact
+$ npm install
+$ npm run dev
+```
+
+For production environments...
+```sh
+See .env.example 
+VITE_apiKey=
+VITE_authDomain=
+VITE_projectId=
+VITE_storageBucket=
+VITE_messagingSenderId=
+VITE_appId=
+```
+
+## Created with
+
+| Tech | README |
+| ------ | ------ |
+| Vite | https://vitejs.dev/ |
+| React | https://es.react.dev/ |
+| Firebase | https://firebase.google.com/?hl=es |
+| JavaScript | https://developer.mozilla.org/es/docs/Web/JavaScript |
+| Toastify | https://fkhadra.github.io/react-toastify/introduction/ |
+| CSS | https://developer.mozilla.org/es/docs/Web/css |
+

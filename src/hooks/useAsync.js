@@ -14,7 +14,10 @@ export const useAsync = (asyncFunction, dependencies = []) => {
         setError(error);
       })
       .finally(() => {
-        setLoader(false);
+        setTimeout(() => {
+          setLoader(false);
+        }, 2500);
+        
       });
   }, dependencies);
 

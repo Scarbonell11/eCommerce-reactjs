@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import CartItem from "../CartItem/CartItem";
 import NoProducts from "../NoProducts/NoProducts";
-import clases from "./Cartview.module.css";
+import clases from "./CartView.module.css";
 
 const CartView = () => {
   const { totalQuantity, cart, total, clearCart } = useContext(CartContext);
