@@ -1,4 +1,5 @@
-import clases from "./ItemDetail.module.css";
+
+import "./ItemDetail.css"
 import ItemCount from "../ItemCount/ItemCount";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
@@ -23,23 +24,46 @@ const ItemDetail = ({ id, img, name, price, description, stock }) => {
   };
 
   return (
-    <article className={clases.contenedorCard}>
-      <div className={clases.card}>
-        <picture>
-          <img className={clases.imagen} src={img} alt={name} />
-        </picture>
-        <section className={clases.info}>
-          <div className={clases.detalles}>
-            <h1> {name} </h1>
-            <h4> {description} </h4>
-            <p> ${price} </p>
-          </div>
 
-          <div className={clases.boton}>
-            {isInCart(id) ? (
-              <Link to="/cart" className={clases.boton}>
+    <div className="cardi">
+  <div className="card__wrapper">
+    <div className="card__back">
+      <Link to="/" >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 14 24"
+        height={24}
+        width={14}
+      >
+        <path
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          strokeWidth={3}
+          stroke="#000"
+          d="M12 2L2 12L12 22"
+        />
+      </svg>
+      </Link>
+    </div>
+    <div className="card__menu" />
+  </div>
+  <div className="card__img">
+    <img src={img} alt={name} />
+  </div>
+  <div className="card__title">{name} </div>
+  <div className="card__subtitle">
+    {description}
+  </div>
+  <div className="card__wrapper">
+    <div className="card__price">${price} </div>
+    <div className="card__counter">
+    {
+            isInCart(id) ? (
+              <Link to="/cart" >
                 {" "}
-                Terminar compra{" "}
+                Terminar compra
+                {" "}
               </Link>
             ) : (
               <ItemCount
@@ -49,11 +73,19 @@ const ItemDetail = ({ id, img, name, price, description, stock }) => {
                 onAdd={handleOnAdd}
               />
             )}
-          </div>
-        </section>
-      </div>
-    </article>
+    </div>
+  </div>
+</div>
+
+
+ 
   );
 };
 
 export default ItemDetail;
+
+
+
+
+
+   
