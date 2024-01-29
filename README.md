@@ -2,6 +2,8 @@
 
 # eCommerce with React js
 
+https://e-commerce-lotuyo.vercel.app/
+
 ## Installation
 
 
@@ -9,7 +11,7 @@
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-$ git clone https://github.com/szuviria/zuvcommerce.git
+$ git clone https://github.com/szuviria/eCommerce-reactjs.git
 $ cd ecommercereact
 $ npm install
 $ npm run dev
