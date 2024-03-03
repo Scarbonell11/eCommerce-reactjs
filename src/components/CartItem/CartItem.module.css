@@ -1,7 +1,9 @@
 .card {
   display: flex;
   justify-content: space-around;
+
   align-items: center;
+  flex-wrap: wrap;
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
@@ -25,3 +27,15 @@
   padding: 10px;
 }
 
+
+@media (width < 850px) {
+  .card {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .name {
+    width: 100%;
+  }
+}

@@ -19,28 +19,29 @@ import CartView from './components/CartView/CartView'
 import { CartProvider } from './context/CartContext'
 import NotFound from './components/NotFound/NotFound.jsx'
 import Checkout from './components/Checkout/Checkout.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
 
 function App() {
-  
+
   return (
     <>
-        <Notification />
-        <BrowserRouter>
-          <CartProvider>
-            <Navbar/>
-            <Routes>
-              <Route path='/' element={<ItemListContainer greeting={'Bienvenido/a aqui encontraras ¡lo tuyo!'}/>} />
-              <Route path='/category/:categoryId' element={<ItemListContainer greeting={'Bienvenido/a aqui encontraras ¡lo tuyo!'}/>} />
-              <Route path='/detail/:productoId' element={<ItemDetailContainer />} />
-              <Route path='/cart' element={<CartView />} />
-              <Route path='/checkout' element={<Checkout />} />
-              <Route path='*' element={<NotFound />} />
-            </Routes>
-          </CartProvider>
-        </BrowserRouter>
+      <Notification />
+      <BrowserRouter>
+        <CartProvider>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<ItemListContainer greeting={'Bienvenido/a aqui encontraras ¡lo tuyo!'} />} />
+            <Route path='/category/:categoryId' element={<ItemListContainer greeting={'Bienvenido/a aqui encontraras ¡lo tuyo!'} />} />
+            <Route path='/detail/:productoId' element={<ItemDetailContainer />} />
+            <Route path='/cart' element={<CartView />} />
+            <Route path='/checkout' element={<Checkout />} />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </CartProvider>
+      </BrowserRouter>
     </>
   )
 }

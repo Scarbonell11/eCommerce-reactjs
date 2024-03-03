@@ -1,34 +1,26 @@
-import "./NoProducts.css";
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+import './NoProducts.css'
+import Card from 'react-bootstrap/Card'
+
+
 
 const NoProducts = () => {
+  const navigate = useNavigate()
   return (
-    <div className="carrito-vacio">
-      <div className="contenedor-vacio">
-        <div className="head">
-          <div id="titulo-carrito">Bienvenido al Carrito de Compras</div>
-          <div className="head-right">
-            <span className="etiq-porfav">
-              Por favor REVISA tu carrito de Compras
-            </span>
+    <article className='containerCardi'>
+      <Card>
+        <Card.Body  >
+          <Card.Title>Carrito vacio</Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">Agrega productos al carrito para continuar</Card.Subtitle>
+          <div>
+            <Card.Link style={{ cursor: "pointer" }} onClick={() => navigate("/")} >Inicio</Card.Link>
+            <Card.Link style={{ cursor: "pointer" }} onClick={() => navigate("/")} >Productos</Card.Link>
           </div>
-        </div>
-        <div className="nohay-productos">
-          <div className="aviso-vacio">
-            <div className="text-vacio">
-              ¡Su carrito esta vacío!
-              <div className="slide-header"></div>
-            </div>
-          </div>
-        </div>
-        <div className="botones-bot4">
-          <br />
-          <Link to="/">Ir a comprar</Link>
-          <Link to="/"> Volver al inicio</Link>
-        </div>
-      </div>
-    </div>
-  );
-};
+        </Card.Body>
+      </Card>
+    </article>
+
+  )
+}
 
 export default NoProducts;

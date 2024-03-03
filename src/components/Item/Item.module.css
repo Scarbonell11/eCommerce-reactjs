@@ -5,7 +5,7 @@
   border-radius: 5px;
   height: 400px;
   width: 300px;
-  margin: 10px;
+  margin: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -25,19 +25,20 @@
 
 .detalles h4 {
   font-family: 'Meldina', sans-serif;
-  padding: 3px;
+  font-size: 1.3rem;
+  padding: 4px;
 }
 
 
 
 .boton {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
 
 .boton a {
-  padding: 5px;
+  padding: 10px;
   background-color: #66a5ad;
   border-color: #66a5ad;
   border-radius: 5px;
